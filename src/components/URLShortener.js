@@ -16,7 +16,6 @@ const URLShortener = ({
   const [errors, setErrors] = useState({});
   const [loading, setLoading] = useState(false);
 
-  // Comprehensive URL validation
   const validateUrl = (url) => {
     if (!url) return 'URL is required';
     if (url.length > 2048) return 'URL is too long (maximum 2048 characters)';
@@ -32,7 +31,7 @@ const URLShortener = ({
     return '';
   };
 
-  // Validate custom shortcode
+
   const validateShortcode = (shortcode) => {
     if (!shortcode) return '';
     
@@ -51,7 +50,7 @@ const URLShortener = ({
     return '';
   };
 
-  // Validate validity period
+ 
   const validateValidityPeriod = (period) => {
     if (!period) return '';
     
@@ -69,7 +68,7 @@ const URLShortener = ({
       [field]: value
     }));
     
-    // Clear errors when user starts typing
+   
     if (errors[field]) {
       setErrors(prev => ({
         ...prev,
@@ -85,7 +84,7 @@ const URLShortener = ({
       validityPeriod: validateValidityPeriod(formData.validityPeriod)
     };
 
-    // Remove empty errors
+    
     Object.keys(newErrors).forEach(key => {
       if (!newErrors[key]) delete newErrors[key];
     });
@@ -107,7 +106,7 @@ const URLShortener = ({
     try {
       await onShortenUrl(formData);
       
-      // Clear form on success
+      
       setFormData({
         currentUrl: '',
         customShortcode: '',
