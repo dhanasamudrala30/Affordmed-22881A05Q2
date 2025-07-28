@@ -1,4 +1,4 @@
-/* App.css - Main Application Styles */
+
 .app {
   min-height: 100vh;
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
@@ -67,7 +67,7 @@
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
-/* Alert Styles */
+
 .alert {
   padding: 16px 20px;
   border-radius: 12px;
