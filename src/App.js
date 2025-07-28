@@ -2,7 +2,7 @@ import React, { useState, useEffect, useMemo, useCallback } from 'react';
 import URLShortener from './components/URLShortener';
 import Statistics from './components/Statistics';
 import './App.css';
-import { Log } from './utils/logger'; // Import the middleware
+import { Log } from './utils/logger'; 
 
 function App() {
   const [urls, setUrls] = useState([]);
