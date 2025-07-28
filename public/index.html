@@ -9,37 +9,36 @@
     <meta name="keywords" content="URL shortener, link shortener, analytics, custom shortcodes, click tracking" />
     <meta name="author" content="URL Shortener Pro Team" />
     
-    <!-- Open Graph Meta Tags -->
+   
     <meta property="og:title" content="URL Shortener Pro - Advanced Link Management" />
     <meta property="og:description" content="Shorten URLs with advanced analytics and custom options. Track clicks, analyze performance, and manage your links effectively." />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://urlshortener-pro.com" />
     <meta property="og:image" content="%PUBLIC_URL%/logo512.png" />
-    
-    <!-- Twitter Card Meta Tags -->
+ 
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="URL Shortener Pro - Advanced Link Management" />
     <meta name="twitter:description" content="Shorten URLs with advanced analytics and custom options." />
     <meta name="twitter:image" content="%PUBLIC_URL%/logo512.png" />
     
-    <!-- Apple Touch Icon -->
+
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
     
-    <!-- Manifest -->
+
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
     
-    <!-- Preconnect to improve performance -->
+  
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     
-    <!-- Security headers -->
+
     <meta http-equiv="X-Content-Type-Options" content="nosniff" />
     <meta http-equiv="X-Frame-Options" content="DENY" />
     <meta http-equiv="X-XSS-Protection" content="1; mode=block" />
     
     <title>URL Shortener Pro - Advanced Link Management & Analytics</title>
     
-    <!-- Structured Data -->
+
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -93,8 +92,7 @@
         </div>
       </div>
     </noscript>
-    
-    <!-- Loading screen -->
+ 
     <div id="loading-screen" style="
       position: fixed;
       top: 0;
@@ -132,7 +130,7 @@
     </style>
     
     <script>
-      // Hide loading screen when React app loads
+ 
       window.addEventListener('load', function() {
         setTimeout(function() {
           const loadingScreen = document.getElementById('loading-screen');
@@ -148,8 +146,7 @@
     </script>
     
     <div id="root"></div>
-    
-    <!-- Service Worker Registration -->
+
     <script>
       if ('serviceWorker' in navigator) {
         window.addEventListener('load', function() {
